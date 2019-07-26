@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class = "bgCal">
+        <table>
+            <tr>
+                <td colspan="6">
+                    <input  type="text" value="0" id="result">
+                </td>
+            </tr>
+            <tr>
+                <td> <button onclick="numClick('7')">7</button> </td>
+                <td> <button onclick="numClick('8')">8</button> </td>
+                <td> <button onclick="numClick('9')">9</button> </td>
+                <td> <button onclick="operatorClick('/')" class = "btnOp">/</button> </td>
+            </tr>
+
+            <tr>
+                <td> <button onclick="numClick('4')">4</button> </td>
+                <td> <button onclick="numClick('5')">5</button> </td>
+                <td> <button onclick="numClick('6')">6</button> </td>
+                <td> <button onclick="operatorClick('*')" class = "btnOp">*</button> </td>
+            </tr>
+
+            <tr>
+                <td> <button onclick="numClick('1')">1</button> </td>
+                <td> <button onclick="numClick('2')">2</button> </td>
+                <td> <button onclick="numClick('3')">3</button> </td>
+                <td> <button onclick="operatorClick('-')" class = "btnOp">-</button> </td>
+            </tr>
+
+            <tr>
+                <td> <button onclick="numClick('0')">0</button> </td>
+                <td> <button onclick="numClear('C')" class = "btnOp">C</button> </td>
+                <td> <button onclick="answer()" class = "btnOp">=</button> </td>
+                <td> <button onclick="operatorClick('+')" class = "btnOp">+</button> </td>
+            </tr>
+        </table>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
